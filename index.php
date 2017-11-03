@@ -95,7 +95,10 @@ if ($db_found) {
                 file_put_contents("posters/" . $imdb . ".jpg", fopen($poster_path, 'r'));
             }
         }
-        print "<div class=\"col-lg-3 col-md-4 col-xs-6\"><a href=\"#\" class=\"d-block mb-4 h-100\"><img class=\"img-fluid img-thumbnail\" src=\"" . $poster_path . "\" alt=\"\"></a></div>";
+        print "<div class=\"col-lg-3 col-md-4 col-xs-6\">";
+	print "<a href=\"#\" class=\"d-block mb-4 h-100\">";
+	print "<img class=\"img-fluid img-thumbnail\" src=\"" . $poster_path . "\" alt=\"\"></a>";
+	print "</div>";
 		
         
     }
