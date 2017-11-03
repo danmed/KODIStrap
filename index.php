@@ -63,16 +63,16 @@ $db_handle    = mysqli_connect($server, $username, $password);
 $db_found     = mysqli_select_db($db_handle, $database);
 if ($db_found) {
     If ($tag == "genre") {
-        $SQL = "select * from movie_view where c14 like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 30";
+        $SQL = "select * from movie_view where c14 like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 120";
     } elseif ($tag == "movie") {
-        $SQL = "select * from movie_view where c00 like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 30";
+        $SQL = "select * from movie_view where c00 like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 120";
     } elseif ($tag == "year") {
-        $SQL = "select * from movie_view where premiered like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 30
+        $SQL = "select * from movie_view where premiered like '%" . $searchstring . "%' ORDER BY RAND() LIMIT 120
 ";
     } elseif ($tag == "rate") {
-        $SQL = "select * from movie_view where rating like '%" . $searchstring . ".%' ORDER BY RAND() LIMIT 30";
+        $SQL = "select * from movie_view where rating like '%" . $searchstring . ".%' ORDER BY RAND() LIMIT 120";
     } else {
-        $SQL = "select * from movie_view ORDER BY DateAdded desc LIMIT 30";
+        $SQL = "select * from movie_view ORDER BY DateAdded desc LIMIT 120";
     }
     
     $result = mysqli_query($db_handle, $SQL);
