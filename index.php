@@ -65,7 +65,6 @@ if (isset($_GET['showmovie'])) {
     });
     </script>
 <?php
-endif;
 }
 	      
 	      
