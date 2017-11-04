@@ -60,7 +60,7 @@
 	     ?>
    <script type='text/javascript'>
     $(document).ready(function(){
-    $('#movieodal').modal('show');
+    $('#moviemodal').modal('show');
     });
     </script>
 <?php
