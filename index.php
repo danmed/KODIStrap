@@ -57,11 +57,10 @@
 
 	  <?PHP
 	      if ($showmovie):
-	      $movieid = $_GET['movieid'];
-?>
+	     ?>
    <script type='text/javascript'>
     $(document).ready(function(){
-    $('#myModal').modal('show');
+    $('#movieodal').modal('show');
     });
     </script>
 <?php
