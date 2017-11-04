@@ -106,7 +106,7 @@ if ($db_found) {
             }
         }
         print "<div class=\"col-lg-1 col-md-6 col-xs-6\">";
-	print "<a href=\"index.php?showmovie=yes&movieid=" . $title . "\" class=\"d-block mb-4 h-100\">";
+	print "<a href=\"index.php?showmovie=" . $title . "\" class=\"d-block mb-4 h-100\">";
 	print "<img class=\"img-fluid img-thumbnail\" src=\"" . $poster_path . "\" alt=\"\"></a>";
 	print "</div>";
 		
