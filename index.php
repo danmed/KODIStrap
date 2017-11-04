@@ -117,6 +117,7 @@ if ($db_found) {
     print "Database NOT Found ";
 }
 	      if ($showmovie):
+	      echo $movie;
 	     ?>
 <script type="text/javascript">
     $(document).ready(function(){
