@@ -56,6 +56,19 @@
       <div class="row text-center text-lg-left">
 
 	  <?PHP
+if (isset($_GET['showmovie'])) {
+	$movieid = $_GET['movieid'];
+   ?>
+   <script type='text/javascript'>
+    $(document).ready(function(){
+    $('#moviemodal').modal('show');
+    });
+    </script>
+<?php
+endif;
+}
+	      
+	      
 include "config.inc.php";
 $searchstring = $_GET["search"];
 $tag          = $_GET["tag"];
