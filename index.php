@@ -55,16 +55,7 @@
 
       <div class="row text-center text-lg-left">
 
-	  <?PHP
-	      if ($_GET['showmovie']):
-	     ?>
-   <script type='text/javascript'>
-    $(document).ready(function(){
-    $('#moviemodal').modal('show');
-    });
-    </script>
-<?php
-endif;
+<?PHP
 	           
 include "config.inc.php";
 $searchstring = $_GET["search"];
@@ -118,7 +109,16 @@ if ($db_found) {
 } else {
     print "Database NOT Found ";
 }
-
+	      if ($_GET['showmovie']):
+	     ?>
+   <script type='text/javascript'>
+    $(document).ready(function(){
+    $('#moviemodal').modal('show');
+    });
+    </script>
+<?php
+endif;
+	      
 include "moviemodal.php";
 ?>
 	  
