@@ -1,10 +1,3 @@
-<?PHP
-if (isset($_GET['showmovie'])) {
-    $movie = $_GET['showmovie'];
-    $showmovie = true;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,7 +97,7 @@ if ($db_found) {
             }
         }
         print "<div class=\"col-lg-1 col-md-6 col-xs-6\">";
-	print "<a href=\"index.php?showmovie=" . $title . "\" class=\"d-block mb-4 h-100\">";
+	print "<a href=\"movie.php?movieid=\"" . $db_field['idMovie'] . "\" class=\"d-block mb-4 h-100\">";
 	print "<img class=\"img-fluid img-thumbnail\" src=\"" . $poster_path . "\" alt=\"\"></a>";
 	print "</div>";
 		
@@ -116,44 +109,9 @@ if ($db_found) {
 } else {
     print "Database NOT Found ";
 }
-	      if ($showmovie):
-	      echo $movie;
-	     ?>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#moviemodal").modal('show');
-    });
-</script>
-<?php
-endif;
-?>	      
+?>      
 
-    <!-- Modal content-->
-<div id="moviemodal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Subscribe our Newsletter</h4>
-            </div>
-            <div class="modal-body">
-                <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-	  
-    
+  
 
     </div>
     <!-- /.container -->
