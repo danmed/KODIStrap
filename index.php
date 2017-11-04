@@ -110,7 +110,20 @@ if ($db_found) {
 }
 ?>
 	  
-	  
+    <?php
+if ($show_modal):
+?>
+   <script type='text/javascript'>
+    $(document).ready(function(){
+    $('#myModal').modal('show');
+    });
+    </script>
+<?php
+endif;
+?>
+	         <?PHP
+include "moviemodal.php";
+?>
 	  
     
 
