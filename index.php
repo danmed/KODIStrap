@@ -1,3 +1,10 @@
+<?PHP
+if (isset($_GET['showmovie'])) {
+    $movie = $_GET['showmovie'];
+    $showmovie = true;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
