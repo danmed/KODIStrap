@@ -56,7 +56,7 @@
       <div class="row text-center text-lg-left">
 
 	  <?PHP
-	      if ($showmovie):
+	      if ($_GET['showmovie']):
 	     ?>
    <script type='text/javascript'>
     $(document).ready(function(){
