@@ -66,7 +66,6 @@
     </script>
 <?php
 endif;
-?>
 	           
 include "config.inc.php";
 $searchstring = $_GET["search"];
