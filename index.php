@@ -2,7 +2,6 @@
 if (isset($_GET['showmovie'])) {
     $movie = $_GET['showmovie'];
     $showmovie = true;
-	echo $movie;
 }
 ?>
 
@@ -117,7 +116,7 @@ if ($db_found) {
 } else {
     print "Database NOT Found ";
 }
-	      if ($_GET['showmovie']):
+	      if ($showmovie):
 	     ?>
    <script type='text/javascript'>
     $(document).ready(function(){
