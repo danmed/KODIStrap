@@ -2,6 +2,7 @@
 if (isset($_GET['showmovie'])) {
     $movie = $_GET['showmovie'];
     $showmovie = true;
+	echo $movie;
 }
 ?>
 
@@ -118,11 +119,11 @@ if ($db_found) {
 }
 	      if ($showmovie):
 	     ?>
-   <script type='text/javascript'>
-    $(window).load(function(){
-    $('#moviemodal').modal('show');
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#moviemodal").modal('show');
     });
-    </script>
+</script>
 <?php
 endif;
 ?>	      
