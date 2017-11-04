@@ -96,7 +96,8 @@ if ($db_found) {
             }
         }
         print "<div class=\"col-lg-1 col-md-6 col-xs-6\">";
-	print "<a href=\"#\" class=\"d-block mb-4 h-100\">";
+	print "<a href=\"#\" class=\"d-block mb-4 h-100\" data-toggle=\"modal\" data-target=\"#moviemodal\">";
+	    <a href="#" data-toggle="modal" data-target="#aboutmodal">
 	print "<img class=\"img-fluid img-thumbnail\" src=\"" . $poster_path . "\" alt=\"\"></a>";
 	print "</div>";
 		
