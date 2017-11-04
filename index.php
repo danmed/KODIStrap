@@ -108,20 +108,7 @@ if ($db_found) {
 } else {
     print "Database NOT Found ";
 }
-?>
-	  
-    <?php
-if ($show_modal):
-?>
-   <script type='text/javascript'>
-    $(document).ready(function(){
-    $('#myModal').modal('show');
-    });
-    </script>
-<?php
-endif;
-?>
-	         <?PHP
+
 include "moviemodal.php";
 ?>
 	  
