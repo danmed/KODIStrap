@@ -125,7 +125,7 @@ if ($db_found) {
     </script>
 <?php
 endif;
-	      
+?>	      
 <!-- Modal -->
 <div id="moviemodal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -147,7 +147,7 @@ endif;
 
   </div>
 </div>
-?>
+
 	  
     
 
