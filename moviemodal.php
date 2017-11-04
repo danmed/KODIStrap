@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div id="aboutmodal" class="modal fade" role="dialog">
+<div id="moviemodal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
