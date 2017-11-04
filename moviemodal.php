@@ -9,7 +9,7 @@
         <h4 class="modal-title">About PStatus</h4>
       </div>
       <div class="modal-body">
-        <p><?PHP echo $title; ?></p>
+        <p><?PHP echo $movieid; ?></p>
         <p><a href="https://github.com/danmed/PStatus">Github</a></p>
       </div>
       <div class="modal-footer">
