@@ -48,4 +48,3 @@ class MovieTrailer
 	}
 }
 ?>
-© 2017 GitHub, Inc.
